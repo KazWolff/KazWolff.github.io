@@ -1,31 +1,19 @@
 
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-.dropdown-options {
-  display: none;
-  position: absolute;
-  overflow: auto;
-}
-
-.dropdown:hover .dropdown-options {
-  display: block;
-}
 /* The navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: rgb(115,147,179,.4);
-  position: fixed; /* Set the navbar to fixed position */
+  background-color: rgb(115,147,179,.6);
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
 
 /* Links inside the navbar */
 .navbar a {
+    font-size: 2em;
   float: right;
   display: block;
-  color: #f2f2f2;
+    background-color: rgb(115,147,179,.8);
+  color: rgba(0, 0, 139);
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
@@ -45,8 +33,14 @@
 body {
     background-image: url("images/canyonbg.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    width: 100%;
+}
+
+  @media (min-width: 1080px) {
+    body {
+      width: 100%;
+    }
+
 }
 
 
@@ -70,7 +64,7 @@ h2 {
 /*Change font size of header 3 to 2em*/
 h3 {
 	font-size: 1.75em;
-    color: #f2f2f2;
+    color: #00008B;
 	}
 /*Set font size of the paragraphs to 1.5em*/
 p {
@@ -99,7 +93,7 @@ table {
     -webkit-border-image: url(images/border.jpg) 130 130 130 130 round round;
     -o-border-image: url(images/border.jpg) 130 130 130 130 round round;
     border-image: url(images/border.jpg) 130 130 130 130 round round;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-family: "MV Boli", serif;
     text-align: center;
 }
